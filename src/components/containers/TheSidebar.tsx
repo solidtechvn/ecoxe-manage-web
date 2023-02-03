@@ -71,13 +71,13 @@ const TheSidebar = () => {
       unfoldable={unfoldable}
       onVisibleChange={(val: boolean) => dispatch(toggleSidebar(val))}
     >
-      <CSidebarBrand className="d-none d-md-flex bg-white cursor-pointer mt-3" onClick={redirectView('/')}>
+      <CSidebarBrand className="d-none d-md-flex bg-white cursor-pointer" onClick={redirectView('/')}>
         <img className="sidebar-brand-full" src={logo} width={126.44} height={31} alt="logoText" />
         <img className="sidebar-brand-narrow" src={logoIcon} width={26.44} height={31} alt="logo" />
       </CSidebarBrand>
       <CSidebarNav>
-        <div className="title-custom">
-          <CNavTitle>Quản lý thiết bị</CNavTitle>
+        <div className="title-custom mt-0">
+          <CNavTitle className='mt-0'>Quản lý thiết bị</CNavTitle>
         </div>
         <CustomCNavItem href="#/table">
           <CPUChipIcon className="nav-icon" viewBox="-1 0 23 23" />
